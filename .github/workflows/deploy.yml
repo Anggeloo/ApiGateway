@@ -2,13 +2,13 @@ name: CI/CD to EC2 - API Gateway
 
 on:
   push:
-    branches: [ "QA" ]
+    branches: [ "QA" ] # El pipeline se ejecutará cuando hagas push a la rama QA
 
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout del repositorio
+      # 1. Checkout del código
       - name: Checkout Source
         uses: actions/checkout@v3
 
@@ -28,7 +28,7 @@ jobs:
     needs: build-and-push-image
     runs-on: ubuntu-latest
     steps:
-      # 5. Desplegar en EC2 usando SSH
+      # 5. Conectar a EC2 y desplegar
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.10
         with:
@@ -39,11 +39,17 @@ jobs:
             # Descargar la última versión de la imagen
             docker pull anggeloo/apigateway:latest
 
-            # Detener y eliminar contenedor previo (si existe)
+            # Detener y eliminar el contenedor previo (si existe)
             docker stop apigateway_container || true
             docker rm apigateway_container || true
 
             # Ejecutar el contenedor con la nueva imagen
             docker run -d --name apigateway_container \
-              -p 5050:5050 \ 
+              -p 5050:5050 \
               anggeloo/apigateway:latest
+
+            # Verificar que el contenedor está corriendo
+            docker ps
+
+            # Mostrar logs iniciales del contenedor (para depuración)
+            docker logs apigateway_container
