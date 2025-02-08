@@ -55,7 +55,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "18.205.27.249",
+          "Host": "44.212.21.59",
           "Port": 3001
         }
       ],
@@ -67,7 +67,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "18.205.27.249",
+          "Host": "44.212.21.59",
           "Port": 3001
         }
       ],
@@ -105,7 +105,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "3.84.134.171",
+          "Host": "54.211.93.144",
           "Port": 3003
         }
       ],
@@ -117,7 +117,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "3.84.134.171",
+          "Host": "54.211.93.144",
           "Port": 3003
         }
       ],
@@ -239,6 +239,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://3.83.94.210:5050" 
+    "BaseUrl": "http://54.208.64.50:5050" 
   }
 }
