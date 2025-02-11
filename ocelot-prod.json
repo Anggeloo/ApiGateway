@@ -173,6 +173,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://54.208.64.50:5050"
+    "BaseUrl": "http://localhost:5050"
   }
 }

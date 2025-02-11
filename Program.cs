@@ -46,6 +46,19 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/inventoryAdd/swagger.json", "Inventory Add");
     c.SwaggerEndpoint("/inventoryUpdate/swagger.json", "Inventory Update");
     c.SwaggerEndpoint("/inventoryDelate/swagger.json", "Inventory Delete");
+    c.SwaggerEndpoint("/workTeam/swagger/doc.json", "WorkTeam Search");
+    c.SwaggerEndpoint("/workTeamAdd/swagger/doc.json", "WorkTeam Add");
+    c.SwaggerEndpoint("/workTeamUpdate/swagger/doc.json", "WorkTeam Update");
+    c.SwaggerEndpoint("/workTeamDelete/swagger/doc.json", "WorkTeam Delete");
+    c.SwaggerEndpoint("/order/swagger/v1/swagger.json", "Order Search");
+    c.SwaggerEndpoint("/orderAdd/swagger/v1/swagger.json", "Order Add");
+    c.SwaggerEndpoint("/orderUpdate/swagger/v1/swagger.json", "Order Update");
+    c.SwaggerEndpoint("/orderDelete/swagger/v1/swagger.json", "Order Delete");
+
+    c.SwaggerEndpoint("/informationGraphics/swagger/v1/swagger.json", "Information Graphics");
+    c.SwaggerEndpoint("/summaryMountry/swagger/v1/swagger.json", "Monthly Summary");
+    c.SwaggerEndpoint("/materialManagement/swagger/v1/swagger.json", "Raw Material Management");
+    c.SwaggerEndpoint("/teamPerformance/swagger/v1/swagger.json", "Team Performance Analysis");
 });
 
 await app.UseOcelot();
