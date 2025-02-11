@@ -6,7 +6,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "34.237.245.84",
+          "Host": "localhost",
           "Port": 3000
         }
       ],
@@ -18,7 +18,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "34.237.245.84",
+          "Host": "localhost",
           "Port": 3000
         }
       ],
@@ -30,7 +30,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "34.237.245.84",
+          "Host": "localhost",
           "Port": 3000
         }
       ],
@@ -42,7 +42,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "34.237.245.84",
+          "Host": "localhost",
           "Port": 3000
         }
       ],
@@ -55,7 +55,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "44.212.21.59",
+          "Host": "localhost",
           "Port": 3001
         }
       ],
@@ -67,7 +67,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "44.212.21.59",
+          "Host": "localhost",
           "Port": 3001
         }
       ],
@@ -80,7 +80,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "3.84.157.124",
+          "Host": "localhost",
           "Port": 3002
         }
       ],
@@ -92,7 +92,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "3.84.157.124",
+          "Host": "localhost",
           "Port": 3002
         }
       ],
@@ -105,7 +105,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "54.211.93.144",
+          "Host": "localhost",
           "Port": 3003
         }
       ],
@@ -117,7 +117,7 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "54.211.93.144",
+          "Host": "localhost",
           "Port": 3003
         }
       ],
@@ -236,9 +236,541 @@
       ],
       "UpstreamPathTemplate": "/inventoryDelate/swagger.json",
       "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    // Services WorkTeam Search
+    {
+      "DownstreamPathTemplate": "/work-team/{team_code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8180
+        }
+      ],
+      "UpstreamPathTemplate": "/work-team/{team_code}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/work-team",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8180
+        }
+      ],
+      "UpstreamPathTemplate": "/work-team",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/doc.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8180
+        }
+      ],
+      "UpstreamPathTemplate": "/workTeam/swagger/doc.json",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Services WorkTeam ADD
+    {
+      "DownstreamPathTemplate": "/work-team/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8181
+        }
+      ],
+      "UpstreamPathTemplate": "/work-team/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/doc.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8181
+        }
+      ],
+      "UpstreamPathTemplate": "/workTeamAdd/swagger/doc.json",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    // Services WorkTeam Update
+    {
+      "DownstreamPathTemplate": "/work-team/update/{team_code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8182
+        }
+      ],
+      "UpstreamPathTemplate": "/work-team/update/{team_code}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/doc.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8182
+        }
+      ],
+      "UpstreamPathTemplate": "/workTeamUpdate/swagger/doc.json",
+      "UpstreamHttpMethod": [ "GET", "PUT" ]
+    },
+    // Services WorkTeam Delete
+    {
+      "DownstreamPathTemplate": "/work-team/delete/{teamCode}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8183
+        }
+      ],
+      "UpstreamPathTemplate": "/work-team/delete/{teamCode}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/doc.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8183
+        }
+      ],
+      "UpstreamPathTemplate": "/workTeamDelete/swagger/doc.json",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    // Services Order Search
+    {
+      "DownstreamPathTemplate": "/Orders/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders/{codice}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/Orders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/order/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Services Order ADD
+    {
+      "DownstreamPathTemplate": "/Orders/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/orderAdd/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    // Services Order Update
+    {
+      "DownstreamPathTemplate": "/Orders/update/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders/update/{codice}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/orderUpdate/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET", "PUT" ]
+    },
+    // Services Order Delete
+    {
+      "DownstreamPathTemplate": "/Orders/delete/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/Orders/delete/{codice}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5003
+        }
+      ],
+      "UpstreamPathTemplate": "/orderDelete/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    // Services Information Graphics
+    // Delete
+    {
+      "DownstreamPathTemplate": "/InformationGraphic/delete/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/InformationGraphic/delete/{codice}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // Update
+    {
+      "DownstreamPathTemplate": "/InformationGraphic/update/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/InformationGraphic/update/{codice}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    // Add
+    {
+      "DownstreamPathTemplate": "/InformationGraphic/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/InformationGraphic/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //Search
+    {
+      "DownstreamPathTemplate": "/InformationGraphic/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/InformationGraphic/{codice}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/InformationGraphic",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/InformationGraphic",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4000
+        }
+      ],
+      "UpstreamPathTemplate": "/informationGraphics/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Services Monthly Summary
+    // Delete
+    {
+      "DownstreamPathTemplate": "/MonthlySummary/delete/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4100
+        }
+      ],
+      "UpstreamPathTemplate": "/MonthlySummary/delete/{codice}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // Update
+    {
+      "DownstreamPathTemplate": "/MonthlySummary/update/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4100
+        }
+      ],
+      "UpstreamPathTemplate": "/MonthlySummary/update/{codice}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    // Add
+    {
+      "DownstreamPathTemplate": "/MonthlySummary/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4100
+        }
+      ],
+      "UpstreamPathTemplate": "/MonthlySummary/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //Search
+    {
+      "DownstreamPathTemplate": "/MonthlySummary/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4100
+        }
+      ],
+      "UpstreamPathTemplate": "/MonthlySummary/{codice}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/MonthlySummary",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4100
+        }
+      ],
+      "UpstreamPathTemplate": "/MonthlySummary",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4100
+        }
+      ],
+      "UpstreamPathTemplate": "/summaryMountry/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Services Raw Material Management
+    // Delete
+    {
+      "DownstreamPathTemplate": "/RawMaterialManagement/delete/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4300
+        }
+      ],
+      "UpstreamPathTemplate": "/RawMaterialManagement/delete/{codice}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // Update
+    {
+      "DownstreamPathTemplate": "/RawMaterialManagement/update/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4300
+        }
+      ],
+      "UpstreamPathTemplate": "/RawMaterialManagement/update/{codice}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    // Add
+    {
+      "DownstreamPathTemplate": "/RawMaterialManagement/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4300
+        }
+      ],
+      "UpstreamPathTemplate": "/RawMaterialManagement/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //Search
+    {
+      "DownstreamPathTemplate": "/RawMaterialManagement/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4300
+        }
+      ],
+      "UpstreamPathTemplate": "/RawMaterialManagement/{codice}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/RawMaterialManagement",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4300
+        }
+      ],
+      "UpstreamPathTemplate": "/RawMaterialManagement",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4300
+        }
+      ],
+      "UpstreamPathTemplate": "/materialManagement/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // Services Team Performance Analysis
+    // Delete
+    {
+      "DownstreamPathTemplate": "/TeamPerformanceAnalysis/delete/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4200
+        }
+      ],
+      "UpstreamPathTemplate": "/TeamPerformanceAnalysis/delete/{codice}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    // Update
+    {
+      "DownstreamPathTemplate": "/TeamPerformanceAnalysis/update/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4200
+        }
+      ],
+      "UpstreamPathTemplate": "/TeamPerformanceAnalysis/update/{codice}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    // Add
+    {
+      "DownstreamPathTemplate": "/TeamPerformanceAnalysis/add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4200
+        }
+      ],
+      "UpstreamPathTemplate": "/TeamPerformanceAnalysis/add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    //Search
+    {
+      "DownstreamPathTemplate": "/TeamPerformanceAnalysis/{codice}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4200
+        }
+      ],
+      "UpstreamPathTemplate": "/TeamPerformanceAnalysis/{codice}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/TeamPerformanceAnalysis",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4200
+        }
+      ],
+      "UpstreamPathTemplate": "/TeamPerformanceAnalysis",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 4200
+        }
+      ],
+      "UpstreamPathTemplate": "/teamPerformance/swagger/v1/swagger.json",
+      "UpstreamHttpMethod": [ "GET" ]
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://54.208.64.50:5050" 
+    "BaseUrl": "http://localhost:5050" 
   }
 }
