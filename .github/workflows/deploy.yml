@@ -2,25 +2,21 @@ name: CI/CD to EC2 - API Gateway
 
 on:
   push:
-    branches: [ "QA" ] # El pipeline se ejecutará cuando hagas push a la rama QA
+    branches: [ "QA" ]
 
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout del código
       - name: Checkout Source
         uses: actions/checkout@v3
 
-      # 2. Login en Docker Hub
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
-      # 3. Construir la imagen Docker
       - name: Build Docker Image
         run: docker build -t anggeloo/apigateway:latest .
 
-      # 4. Subir la imagen a Docker Hub
       - name: Push Docker Image
         run: docker push anggeloo/apigateway:latest
 
@@ -28,7 +24,6 @@ jobs:
     needs: build-and-push-image
     runs-on: ubuntu-latest
     steps:
-      # 5. Conectar a EC2 y desplegar
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.10
         with:
@@ -36,19 +31,24 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
-            # Descargar la última versión de la imagen
-            docker pull anggeloo/apigateway:latest
-
-            # Detener y eliminar el contenedor previo (si existe)
+            # Eliminar contenedor anterior
             docker stop apigateway_container || true
             docker rm apigateway_container || true
 
-            # Ejecutar el contenedor con la nueva imagen
+            # Eliminar imágenes antiguas
+            docker rmi $(docker images -q anggeloo/apigateway) || true
+
+            # Descargar la nueva imagen
+            docker pull anggeloo/apigateway:latest
+
+            # Ejecutar nuevo contenedor con archivos de configuración
             docker run -d --name apigateway_container \
               -p 5050:5050 \
+              -v /home/ubuntu/configs/ocelot-prod.json:/app/ocelot-prod.json \
+              -v /home/ubuntu/configs/appsettings.json:/app/appsettings.json \
               anggeloo/apigateway:latest
 
-            # Verificar que el contenedor está corriendo
+            # Verificar si el contenedor está corriendo
             docker ps
 
             # Mostrar logs iniciales del contenedor (para depuración)
