@@ -43,3 +43,47 @@ C:\Users\Det-Pc\Documents\Practicas\microservices-project\ApiGateway\obj\Debug\n
 C:\Users\Det-Pc\Documents\Practicas\microservices-project\ApiGateway\obj\Debug\net8.0\ref\ApiGateway.dll
 C:\Users\Det-Pc\Documents\Practicas\microservices-project\ApiGateway\bin\Debug\net8.0\ocelot-prod.json
 C:\Users\Det-Pc\Documents\Practicas\microservices-project\ApiGateway\bin\Debug\net8.0\ocelot-dev.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\appsettings.Development.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\appsettings.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\ocelot-dev.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\ocelot-prod.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\ApiGateway.exe
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\ApiGateway.deps.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\ApiGateway.runtimeconfig.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\ApiGateway.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\ApiGateway.pdb
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\FluentValidation.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Ocelot.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.csproj.AssemblyReference.cache
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.AssemblyInfoInputs.cache
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.AssemblyInfo.cs
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.csproj.CoreCompileInputs.cache
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.sourcelink.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\staticwebassets.build.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\staticwebassets.development.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\staticwebassets\msbuild.ApiGateway.Microsoft.AspNetCore.StaticWebAssets.props
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\staticwebassets\msbuild.build.ApiGateway.props
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ApiGateway.props
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ApiGateway.props
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\staticwebassets.pack.json
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\scopedcss\bundle\ApiGateway.styles.css
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.csproj.Up2Date
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\refint\ApiGateway.dll
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.pdb
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ApiGateway.genruntimeconfig.cache
+D:\UCE\Noveno semestre\Programación Distribuida\ProyectAns\microservices-project\ApiGateway\obj\Debug\net8.0\ref\ApiGateway.dll
